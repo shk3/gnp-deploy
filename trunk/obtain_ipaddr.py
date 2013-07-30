@@ -35,11 +35,13 @@ else:
         if len(sys.argv) > 3:
             AUTOSAVE_INTERVAL = int(sys.argv[3])
 
-if platform.system() == 'Windows':
-    logging.basicConfig(filename='scanner_%s.log'%socket.gethostname(), level='DEBUG', format=LOGGING_FORMAT)
-else:
-    logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/scanner_%s.log'%socket.gethostname(), level='DEBUG', format=LOGGING_FORMAT)
-
+try:
+    if platform.system() == 'Windows':
+        logging.basicConfig(filename='scanner_%s.log'%socket.gethostname(), level='DEBUG', format=LOGGING_FORMAT)
+    else:
+        logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/scanner_%s.log'%socket.gethostname(), level='DEBUG', format=LOGGING_FORMAT)
+except:
+    pass
 terminate_time = datetime.now() + timedelta(minutes=TERMINATE_MINUTES)
 cur_hour = datetime.now().hour>>1<<1
 
