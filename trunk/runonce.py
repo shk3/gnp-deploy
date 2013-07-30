@@ -22,7 +22,7 @@ except SystemExit:
 except:
     logging.exception(''.join(traceback.format_exception(*sys.exc_info())))
     pass
-os.system('/usr/bin/mysql -u root -paQcy7j2CSHYhDB8E cdnlab < /home/cdnlab-gnp/gnp-deploy/import-nodes.sql')
+os.system('/usr/bin/mysql -u root -paQcy7j2CSHYhDB8E cdnlab < /home/cdnlab-gnp/gnp-deploy/import-nodes.sql >> mysql_%s.log'%socket.gethostname())
 
 logging.info('Run at version %d.' % VER)
 whdl = open('/home/cdnlab-gnp/gnp-logs/runonce_%s.lock'%socket.gethostname(), 'w')
