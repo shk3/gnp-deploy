@@ -104,24 +104,29 @@ def scanner(i, q):
     logging.info('[%2d] Thread is started.'%(i))
     while True:
         (ip, row_id) = q.get()
-        # print('[%2d] get %s'%(i, ip))
-        ret = runCheck(i, ip)
-        ip_count = ip_count + 1
-        
-        online = 0
-        min_roundtrip = -1
-        ping_trails = 0
-        
-        if ret is not None:
-            online = 1
-            min_roundtrip, ping_trails = ret[1:]
-        buf_lst.append((1, online, min_roundtrip, ping_trails, datetime.now(), 
-                cur_hour, row_id, cur_hour))
-        if ip_count % AUTOSAVE_INTERVAL == 0:
-            saveResult()
-            print('[%2d] Autosaved at %d'%(i, ip_count))
-            logging.info('[%2d] Autosaved at %d'%(i, ip_count))
-        q.task_done()
+        try:
+            # print('[%2d] get %s'%(i, ip))
+            ret = runCheck(i, ip)
+            ip_count = ip_count + 1
+            
+            online = 0
+            min_roundtrip = -1
+            ping_trails = 0
+            
+            if ret is not None:
+                online = 1
+                min_roundtrip, ping_trails = ret[1:]
+            buf_lst.append((1, online, min_roundtrip, ping_trails, datetime.now(), 
+                    cur_hour, row_id, cur_hour))
+            if ip_count % AUTOSAVE_INTERVAL == 0:
+                saveResult()
+                print('[%2d] Autosaved at %d'%(i, ip_count))
+                logging.info('[%2d] Autosaved at %d'%(i, ip_count))
+            q.task_done()
+        except:
+            q.task_done()
+            logging.exception(''.join(traceback.format_exception(*sys.exc_info())))
+            logging.critical('[%2d] The job %d is terminated with an exception.'%(i, row_id))
         if (terminate_time - datetime.now()).total_seconds() < 0:
             logging.info('Time limitation exceed. ')
             clearQueue(q)
