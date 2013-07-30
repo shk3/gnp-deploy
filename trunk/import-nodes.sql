@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `roundtrip` (
   `ip` bigint(32) NOT NULL default '0',
   `done` tinyint(1) NOT NULL default '0',
   `online` tinyint(1) NOT NULL default '1',
-  `min_roundtrip` int(11) NOT NULL default '-1',
+  `min_roundtrip` bigint(15) NOT NULL default '-1',
   `trails` int(11) NOT NULL default '0',
   `last_change` timestamp NOT NULL default CURRENT_TIMESTAMP,
   `hour` int(6) NOT NULL default '-1',
