@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 26, 2013 at 10:55 PM
+-- Generation Time: Jul 30, 2013 at 07:06 PM
 -- Server version: 5.00.15
 -- PHP Version: 5.3.13
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `cdnlab`
 --
-USE `cdnlab`;
+
 -- --------------------------------------------------------
 
 --
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `roundtrip` (
   `ip` bigint(32) NOT NULL default '0',
   `done` tinyint(1) NOT NULL default '0',
   `online` tinyint(1) NOT NULL default '1',
-  `min_roundtrip` int(15) NOT NULL default '-1',
+  `min_roundtrip` float NOT NULL default '-1',
   `trails` int(11) NOT NULL default '0',
   `last_change` timestamp NOT NULL default CURRENT_TIMESTAMP,
   PRIMARY KEY  (`id`),
