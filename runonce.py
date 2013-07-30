@@ -8,7 +8,7 @@ try:
 except:
     pass
 import os,sys,re,csv, subprocess, time, platform, logging, traceback, socket
-VER = 2
+VER = 3
 LOGGING_FORMAT = '[%(asctime)-15s] %(message)s'
 
 try:
@@ -28,7 +28,8 @@ except:
 print('Runonce script start...')
     
 os.system('rm -fR /home/cdnlab-gnp/gnp-logs')
-os.system('svn checkout https://gnp-deploy.googlecode.com/svn/branches/logs/%s /home/cdnlab-gnp/gnp-logs --username shk3@monkeyhouse.info --password pu8bq7qu5hB4'%socket.gethostname())
+if os.system('svn checkout https://gnp-deploy.googlecode.com/svn/branches/logs/%s /home/cdnlab-gnp/gnp-logs --username shk3@monkeyhouse.info --password pu8bq7qu5hB4'%socket.gethostname()) != 0:
+    exit(0)
 os.system('/usr/bin/mysql -u root -paQcy7j2CSHYhDB8E cdnlab < /home/cdnlab-gnp/gnp-deploy/import-nodes.sql >> /home/cdnlab-gnp/gnp-logs/mysql_%s.log'%socket.gethostname())
 
 # os.system('md /home/cdnlab-gnp/gnp-logs/%s'%socket.gethostname())
