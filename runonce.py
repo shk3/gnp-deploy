@@ -11,7 +11,10 @@ import os,sys,re,csv, subprocess, time, platform, logging, traceback, socket
 VER = 1
 LOGGING_FORMAT = '[%(asctime)-15s] %(message)s'
 
-logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/runonce_%s.log'%socket.gethostname(), level='DEBUG', format=LOGGING_FORMAT) 
+try:
+    logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/runonce_%s.log'%socket.gethostname(), level='DEBUG', format=LOGGING_FORMAT) 
+except:
+    pass
 try:
     rhdl = open('/home/cdnlab-gnp/runonce_%s.lock'%socket.gethostname(), 'r') 
     cur_ver = int(rhdl.read().strip())
