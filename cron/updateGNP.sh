@@ -1,0 +1,1 @@
+svn checkout http://gnp-deploy.googlecode.com/svn/trunk/ /root/cdnlab-gnp/gnp-deploy
