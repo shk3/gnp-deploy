@@ -129,7 +129,7 @@ def scanner(i, q):
             q.task_done()
             logging.exception(''.join(traceback.format_exception(*sys.exc_info())))
             logging.critical('[%2d] The job %d is terminated with an exception.'%(i, row_id))
-        if (terminate_time - datetime.now()).total_seconds() < 0:
+        if terminate_time < datetime.now():
             logging.info('Time limitation exceed. ')
             clearQueue(q)
 def clearQueue(q):
@@ -181,7 +181,7 @@ try:
         conn.close()
         if flag:
             break
-        if (terminate_time - datetime.now()).total_seconds() < 0:
+        if terminate_time < datetime.now():
             break
     logging.info('The process is done normally.')
 except:
