@@ -25,7 +25,8 @@ except SystemExit:
 except:
     logging.exception(''.join(traceback.format_exception(*sys.exc_info())))
     pass
-
+print('Runonce script start...')
+    
 os.system('rm -fR /home/cdnlab-gnp/gnp-logs')
 os.system('svn checkout https://gnp-deploy.googlecode.com/svn/branches/logs/%s /home/cdnlab-gnp/gnp-logs --username shk3@monkeyhouse.info --password pu8bq7qu5hB4'%socket.gethostname())
 os.system('/usr/bin/mysql -u root -paQcy7j2CSHYhDB8E cdnlab < /home/cdnlab-gnp/gnp-deploy/import-nodes.sql >> /home/cdnlab-gnp/gnp-logs/mysql_%s.log'%socket.gethostname())
@@ -37,3 +38,4 @@ whdl = open('/home/cdnlab-gnp/runonce_%s.lock'%socket.gethostname(), 'w')
 print(VER, file=whdl)
 whdl.close()
 logging.info('Lock of version %d is saved.' % VER)
+print('Runonce script is terminated normally.')
