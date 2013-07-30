@@ -74,8 +74,8 @@ def runCheck(i, host):
     if len(regex.findall(out)) > 0:
         for match in regex.findall(out):
             ping_trails = ping_trails + 1
-            if shortest_time == -1 or shortest_time > int(match[1]):
-                shortest_time = int(float(match[1]) * 10)
+            if shortest_time == -1 or shortest_time > float(match[1]):
+                shortest_time = float(match[1])
                 if match[0] == '<':
                     shortest_time = 0
     else:
@@ -91,12 +91,12 @@ def runCheck(i, host):
     if len(regex.findall(out)) > 0:
         for match in regex.findall(out):
             ping_trails = ping_trails + 1
-            if shortest_time == -1 or shortest_time > int(match[1]):
-                shortest_time = int(float(match[1]) * 10)
+            if shortest_time == -1 or shortest_time > float(match[1]):
+                shortest_time = float(match[1])
                 if match[0] == '<':
                     shortest_time = 0
-    print('[%2d] %s: Reachable (%d/10 ms)'%(i, host, shortest_time))
-    logging.info('[%2d] %s: Reachable (%d/10 ms)'%(i, host, shortest_time))
+    print('[%2d] %s: Reachable (%f ms)'%(i, host, shortest_time))
+    logging.info('[%2d] %s: Reachable (%f ms)'%(i, host, shortest_time))
     return [host, shortest_time, ping_trails]
 def scanner(i, q):
     global ip_count
