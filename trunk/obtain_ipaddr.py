@@ -16,7 +16,7 @@ try:
 except ImportError:
     from Queue import Queue
 from datetime import datetime, timedelta
-import os,sys,re,csv, subprocess, time, platform, logging, traceback
+import os,sys,re,csv, subprocess, time, platform, logging, traceback, socket
 import mysql.connector
 
 TERMINATE_MINUTES = 115
@@ -36,9 +36,9 @@ else:
             AUTOSAVE_INTERVAL = int(sys.argv[3])
 
 if platform.system() == 'Windows':
-    logging.basicConfig(filename='scanner.log', level='DEBUG', format=LOGGING_FORMAT)
+    logging.basicConfig(filename='scanner_%s.log'%socket.gethostname(), level='DEBUG', format=LOGGING_FORMAT)
 else:
-    logging.basicConfig(filename='/home/cdnlab-gnp/scanner.log', level='DEBUG', format=LOGGING_FORMAT)
+    logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/scanner_%s.log'%socket.gethostname(), level='DEBUG', format=LOGGING_FORMAT)
 
 terminate_time = datetime.now() + timedelta(minutes=TERMINATE_MINUTES)
 cur_hour = datetime.now().hour>>1<<1
