@@ -25,7 +25,7 @@ except SystemExit:
 except:
     logging.exception(''.join(traceback.format_exception(*sys.exc_info())))
     pass
-print('Runonce script start...')
+print('Runonce script ver %d start...' % VER)
     
 # os.system('rm -fR /home/cdnlab-gnp/gnp-logs')
 # if os.system('svn checkout https://gnp-deploy.googlecode.com/svn/branches/logs/%s /home/cdnlab-gnp/gnp-logs --username shk3@monkeyhouse.info --password pu8bq7qu5hB4'%socket.gethostname()) != 0:
