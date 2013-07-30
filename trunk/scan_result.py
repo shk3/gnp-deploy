@@ -1,15 +1,16 @@
-from __future__ import print_function
-try:
-    input = raw_input
-except:
-    pass
-    
-import mysql.connector, os
-MYSQL_USER = 'cdnlab_scanner'
-MYSQL_PSWD = 'GVL3X94Q5nD29RBh'
+import mysql.connector, os, sys
+from IPy import IP
+MYSQL_USER = 'scanner_admin'
+MYSQL_PSWD = 'vVshFqqhJpHcJT5F'
 MYSQL_DBNAME = 'cdnlab'
+
+if len(sys.argv) <= 1:
+    remote_host = input("Host: ")
+else:
+    remote_host = sys.argv[1]
+
 conn = mysql.connector.connect(user=MYSQL_USER, password=MYSQL_PSWD,
-                               host='localhost', database=MYSQL_DBNAME)
+                               host=remote_host, database=MYSQL_DBNAME)
 select = ("SELECT `ip`, `min_roundtrip`, `trails` FROM `roundtrip` "
          "WHERE `done`=1 AND `online`=1")
 cursor = conn.cursor()
@@ -19,8 +20,8 @@ while True:
     flag = False
     for row in cursor.fetchmany(20):
         flag = True
-        ip = row[0]
-        print('%s\t%4d\t%3d'%(ip, row[1], row[2]))
+        ip = IP(row[0]).strNormal()
+        print('%s\t%7.3f\t%3d'%(ip, row[1], row[2]))
     if not flag:
         break
     os.system('pause')
