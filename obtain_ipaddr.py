@@ -37,9 +37,9 @@ else:
 
 try:
     if platform.system() == 'Windows':
-        logging.basicConfig(filename='scanner_%s.log'%socket.gethostname(), level='DEBUG', format=LOGGING_FORMAT)
+        logging.basicConfig(filename='scanner_%s.log'%socket.gethostname(), level='INFO', format=LOGGING_FORMAT)
     else:
-        logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/scanner_%s.log'%socket.gethostname(), level='DEBUG', format=LOGGING_FORMAT)
+        logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/scanner_%s.log'%socket.gethostname(), level='INFO', format=LOGGING_FORMAT)
 except:
     pass
 terminate_time = datetime.now() + timedelta(minutes=TERMINATE_MINUTES)
@@ -98,12 +98,12 @@ def runCheck(i, host):
                 if match[0] == '<':
                     shortest_time = 0
     # print('[%2d] %s: Reachable (%f ms)'%(i, host, shortest_time))
-    logging.info('[%2d] %s: Reachable (%f ms)'%(i, host, shortest_time))
+    logging.debug('[%2d] %s: Reachable (%f ms)'%(i, host, shortest_time))
     return [host, shortest_time, ping_trails]
 def scanner(i, q):
     global ip_count
     # print('[%2d] Thread is started.'%(i))
-    logging.info('[%2d] Thread is started.'%(i))
+    logging.debug('[%2d] Thread is started.'%(i))
     while True:
         (ip, row_id) = q.get()
         try:
@@ -123,7 +123,7 @@ def scanner(i, q):
             if ip_count % AUTOSAVE_INTERVAL == 0:
                 saveResult()
                 # print('[%2d] Autosaved at %d'%(i, ip_count))
-                logging.info('[%2d] Autosaved at %d'%(i, ip_count))
+                logging.debug('[%2d] Autosaved at %d'%(i, ip_count))
             q.task_done()
         except:
             q.task_done()
@@ -133,12 +133,12 @@ def scanner(i, q):
             logging.info('Time limitation exceed. ')
             clearQueue(q)
 def clearQueue(q):
-    logging.info('Start to clear the queue...')
+    logging.debug('Start to clear the queue...')
     while not q.empty():
         q.get()
         q.task_done()
 def saveResult():
-    logging.info('Start to save the result...')
+    logging.debug('Start to save the result...')
     global buf_lst
     conn = mysql.connector.connect(user=MYSQL_USER, password=MYSQL_PSWD,
                                    host='localhost', database=MYSQL_DBNAME,
@@ -158,7 +158,7 @@ try:
             (datetime.now().strftime('%m/%d/%y %H:%M:%S')))
     while True:
         # print('Add tasks')
-        logging.info('Add tasks')
+        logging.debug('Add tasks')
         conn = mysql.connector.connect(user=MYSQL_USER, password=MYSQL_PSWD,
                                        host='localhost', database=MYSQL_DBNAME,
                                        autocommit=True)
