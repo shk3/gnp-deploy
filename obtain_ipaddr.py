@@ -81,7 +81,7 @@ def runCheck(i, host):
                 if match[0] == '<':
                     shortest_time = 0
     else:
-        print('[%2d] %s: Offline'%(i, host))
+        # print('[%2d] %s: Offline'%(i, host))
         return None
     # Measure
     p = subprocess.Popen(['ping', __ping_count, str(trails - 3), host],
@@ -97,12 +97,12 @@ def runCheck(i, host):
                 shortest_time = float(match[1])
                 if match[0] == '<':
                     shortest_time = 0
-    print('[%2d] %s: Reachable (%f ms)'%(i, host, shortest_time))
+    # print('[%2d] %s: Reachable (%f ms)'%(i, host, shortest_time))
     logging.info('[%2d] %s: Reachable (%f ms)'%(i, host, shortest_time))
     return [host, shortest_time, ping_trails]
 def scanner(i, q):
     global ip_count
-    print('[%2d] Thread is started.'%(i))
+    # print('[%2d] Thread is started.'%(i))
     logging.info('[%2d] Thread is started.'%(i))
     while True:
         (ip, row_id) = q.get()
@@ -122,7 +122,7 @@ def scanner(i, q):
                     cur_hour, row_id, cur_hour))
             if ip_count % AUTOSAVE_INTERVAL == 0:
                 saveResult()
-                print('[%2d] Autosaved at %d'%(i, ip_count))
+                # print('[%2d] Autosaved at %d'%(i, ip_count))
                 logging.info('[%2d] Autosaved at %d'%(i, ip_count))
             q.task_done()
         except:
@@ -154,8 +154,10 @@ def saveResult():
 started = False
 #Push all tasks
 try:
+    print('Scanner is started at %s.' % 
+            (datetime.now().strftime('%m/%d/%y %H:%M:%S')))
     while True:
-        print('Add tasks')
+        # print('Add tasks')
         logging.info('Add tasks')
         conn = mysql.connector.connect(user=MYSQL_USER, password=MYSQL_PSWD,
                                        host='localhost', database=MYSQL_DBNAME,
@@ -184,6 +186,7 @@ try:
         if terminate_time < datetime.now():
             break
     logging.info('The process is done normally.')
+    print('Scanner is done normally.')
 except:
     logging.exception(''.join(traceback.format_exception(*sys.exc_info())))
     logging.critical('The process is terminated with an exception.')
