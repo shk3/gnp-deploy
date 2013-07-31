@@ -155,7 +155,7 @@ started = False
 #Push all tasks
 try:
     # print('Scanner is started at %s.' % 
-            (datetime.now().strftime('%m/%d/%y %H:%M:%S')))
+            # (datetime.now().strftime('%m/%d/%y %H:%M:%S')))
     while True:
         # print('Add tasks')
         logging.debug('Add tasks')
