@@ -37,9 +37,9 @@ else:
 
 try:
     if platform.system() == 'Windows':
-        logging.basicConfig(filename='scanner_%s.log'%socket.gethostname(), level='INFO', format=LOGGING_FORMAT)
+        logging.basicConfig(filename='scanner_%s.log'%socket.gethostname(), level=logging.INFO, format=LOGGING_FORMAT)
     else:
-        logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/scanner_%s.log'%socket.gethostname(), level='INFO', format=LOGGING_FORMAT)
+        logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/scanner_%s.log'%socket.gethostname(), level=logging.INFO, format=LOGGING_FORMAT)
 except:
     pass
 terminate_time = datetime.now() + timedelta(minutes=TERMINATE_MINUTES)
@@ -154,7 +154,7 @@ def saveResult():
 started = False
 #Push all tasks
 try:
-    print('Scanner is started at %s.' % 
+    # print('Scanner is started at %s.' % 
             (datetime.now().strftime('%m/%d/%y %H:%M:%S')))
     while True:
         # print('Add tasks')
@@ -186,7 +186,7 @@ try:
         if terminate_time < datetime.now():
             break
     logging.info('The process is done normally.')
-    print('Scanner is done normally.')
+    # print('Scanner is done normally.')
 except:
     logging.exception(''.join(traceback.format_exception(*sys.exc_info())))
     logging.critical('The process is terminated with an exception.')

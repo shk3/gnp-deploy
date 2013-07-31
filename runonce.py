@@ -8,11 +8,11 @@ try:
 except:
     pass
 import os,sys,re,csv, subprocess, time, platform, logging, traceback, socket
-VER = 5
+VER = 6
 LOGGING_FORMAT = '[%(asctime)-15s] %(message)s'
 
 try:
-    logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/runonce_%s.log'%socket.gethostname(), level='DEBUG', format=LOGGING_FORMAT) 
+    logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/runonce_%s.log'%socket.gethostname(), level=logging.INFO, format=LOGGING_FORMAT) 
 except:
     pass
 try:
@@ -26,13 +26,14 @@ except:
     logging.exception(''.join(traceback.format_exception(*sys.exc_info())))
     pass
 print('Runonce script ver %d start...' % VER)
+logging.info('Run at version %d.' % VER)
     
 # os.system('rm -fR /home/cdnlab-gnp/gnp-logs')
 # if os.system('svn checkout https://gnp-deploy.googlecode.com/svn/branches/logs/%s /home/cdnlab-gnp/gnp-logs --username shk3@monkeyhouse.info --password pu8bq7qu5hB4'%socket.gethostname()) != 0:
     # exit(0)
-os.system('/usr/bin/mysql -u root -paQcy7j2CSHYhDB8E cdnlab < /home/cdnlab-gnp/gnp-deploy/import-nodes.sql >> /home/cdnlab-gnp/gnp-logs/mysql_%s.log'%socket.gethostname())
+# os.system('/usr/bin/mysql -u root -paQcy7j2CSHYhDB8E cdnlab < /home/cdnlab-gnp/gnp-deploy/import-nodes.sql >> /home/cdnlab-gnp/gnp-logs/mysql_%s.log'%socket.gethostname())
+os.system('rm -f /home/cdnlab-gnp/gnp-logs/*.log')
 
-logging.info('Run at version %d.' % VER)
 whdl = open('/home/cdnlab-gnp/runonce_%s.lock'%socket.gethostname(), 'w')
 print(VER, file=whdl)
 whdl.close()
