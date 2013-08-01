@@ -37,9 +37,9 @@ else:
 
 try:
     if platform.system() == 'Windows':
-        logging.basicConfig(filename='scanner_%s.log'%socket.gethostname(), level=logging.INFO, format=LOGGING_FORMAT)
+        logging.basicConfig(filename='scanner_%s.log'%socket.gethostname(), level=logging.WARNING, format=LOGGING_FORMAT)
     else:
-        logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/scanner_%s.log'%socket.gethostname(), level=logging.INFO, format=LOGGING_FORMAT)
+        logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/scanner_%s.log'%socket.gethostname(), level=logging.WARNING, format=LOGGING_FORMAT)
 except:
     pass
 terminate_time = datetime.now() + timedelta(minutes=TERMINATE_MINUTES)
