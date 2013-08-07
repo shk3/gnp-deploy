@@ -19,7 +19,7 @@ from datetime import datetime, timedelta
 import os,sys,re,csv, subprocess, time, platform, logging, traceback, socket
 import mysql.connector
 
-TERMINATE_MINUTES = 115
+TERMINATE_MINUTES = 58
 AUTOSAVE_INTERVAL = 30
 MYSQL_USER = 'cdnlab_scanner'
 MYSQL_PSWD = 'GVL3X94Q5nD29RBh'
@@ -101,7 +101,7 @@ def runCheck(i, host):
     logging.debug('[%2d] %s: Reachable (%f ms)'%(i, host, shortest_time))
     return [host, shortest_time, ping_trails]
 def scanner(i, q):
-    global ip_count
+    global ip_count, flag
     # print('[%2d] Thread is started.'%(i))
     logging.debug('[%2d] Thread is started.'%(i))
     while True:
@@ -129,6 +129,7 @@ def scanner(i, q):
             q.task_done()
             logging.exception(''.join(traceback.format_exception(*sys.exc_info())))
             logging.critical('[%2d] The job %d is terminated with an exception.'%(i, row_id))
+            flag = True
         if terminate_time < datetime.now():
             logging.info('Time limitation exceed. ')
             clearQueue(q)
