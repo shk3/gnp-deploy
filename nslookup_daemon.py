@@ -10,7 +10,7 @@ try:
 except ImportError:
     from Queue import Queue
 from datetime import datetime, timedelta
-import os, sys, subprocess, time, platform, logging, traceback, socket
+import os, sys, subprocess, time, platform, logging, traceback, socket, errno
 import mysql.connector
 
 # python fetch_cdn.py [num_threads=1] [autosave=10]
@@ -53,11 +53,16 @@ insert = ("INSERT IGNORE INTO `cdn_ips` "
 def runCheck(i, host):
     host = str(host)
     
-    result = socket.gethostbyname_ex(host)   
-    for item in result[2]:   
-        logging.debug('[%2d] %s: %s'%(i, host, item))
+    try:
+        result = socket.gethostbyname_ex(host)
+    except socket.gaierror as e:
+        logging.warning('[%2d] An error occurs when handling the runCheck: %s' % (i, str(e)))
+        return []
+        # Issues: Some possible errors can be prevented.
         # Possible: socket.gaierror: [Errno 11004] getaddrinfo failed
         # socket.gaierror: [Errno -3] Temporary failure in name resolution
+    for item in result[2]:   
+        logging.debug('[%2d] %s: %s'%(i, host, item))
     return result[2]
 def nslookup(i, q):
     global dom_count, flag
