@@ -104,3 +104,4 @@ herror: [Errno 2] Host name lookup failure
 [2013-08-07 21:02:02,153]WARNING: [ 0] An error occurs when handling the runCheck: [Errno -3] Temporary failure in name resolution
 [2013-08-07 21:02:32,183]WARNING: [ 0] An error occurs when handling the runCheck: [Errno -3] Temporary failure in name resolution
 [2013-08-07 21:02:54,094]WARNING: [ 0] An error occurs when handling the runCheck: [Errno -3] Temporary failure in name resolution
+[2013-08-07 22:01:32,378]WARNING: [ 0] An error occurs when handling the runCheck: [Errno -3] Temporary failure in name resolution
