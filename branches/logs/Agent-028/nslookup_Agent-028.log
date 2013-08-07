@@ -133,3 +133,4 @@ Traceback (most recent call last):
     result = socket.gethostbyname_ex(host)
 herror: [Errno 2] Host name lookup failure
 [2013-08-08 03:01:41,200]WARNING: [ 0] An error occurs when handling the runCheck: [Errno -3] Temporary failure in name resolution
+[2013-08-08 04:01:39,263]WARNING: [ 0] An error occurs when handling the runCheck: [Errno -3] Temporary failure in name resolution
