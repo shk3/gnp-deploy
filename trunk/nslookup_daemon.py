@@ -22,7 +22,7 @@ MYSQL_USER = 'cdnlab_scanner'
 MYSQL_PSWD = 'GVL3X94Q5nD29RBh'
 MYSQL_DBNAME = 'cdnlab'
 num_threads = 1
-LOGGING_FORMAT = '[%(asctime)-15s] %(message)s'
+LOGGING_FORMAT = '[%(asctime)-15s]%(levelname)s: %(message)s'
 if len(sys.argv) > 1:
     num_threads = int(sys.argv[1])
     if len(sys.argv) > 2:
@@ -81,8 +81,7 @@ def nslookup(i, q):
             q.task_done()
         except:
             q.task_done()
-            logging.exception(''.join(traceback.format_exception(*sys.exc_info())))
-            logging.critical('[%2d] The job %d is terminated with an exception.'%(i, row_id))
+            logging.critical('[%2d] The job %d is terminated with an exception.'%(i, row_id), exc_info=True)
             flag = True
         if terminate_time < datetime.now():
             logging.info('Time limitation exceed. ')
@@ -141,8 +140,7 @@ try:
             break
     logging.info('The process is done normally.')
 except:
-    logging.exception(''.join(traceback.format_exception(*sys.exc_info())))
-    logging.critical('The process is terminated with an exception.')
+    logging.critical('The process is terminated with an exception.', exc_info=True)
     try:
         saveResult()
         logging.info('Results are saved.')
