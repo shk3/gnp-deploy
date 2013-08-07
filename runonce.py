@@ -8,7 +8,7 @@ try:
 except:
     pass
 import os,sys,re,csv, subprocess, time, platform, logging, traceback, socket
-VER = 7
+VER = 8
 LOGGING_FORMAT = '[%(asctime)-15s] %(message)s'
 
 try:
@@ -23,12 +23,12 @@ try:
     print('Runonce script ver %d start...' % VER)
     logging.info('Run at version %d.' % VER)
         
-    # Backup database
-    if os.system('/usr/bin/mysqldump -u root -paQcy7j2CSHYhDB8E cdnlab | /bin/gzip > /home/cdnlab-gnp/export-nodes.sql.gz') != 0:
-        logging.critical('Backup database failed...')
-        exit(0)
+    # # Backup database
+    # if os.system('/usr/bin/mysqldump -u root -paQcy7j2CSHYhDB8E cdnlab | /bin/gzip > /home/cdnlab-gnp/export-nodes.sql.gz') != 0:
+        # logging.critical('Backup database failed...')
+        # exit(0)
     # Import data
-    if os.system('gunzip < /home/cdnlab-gnp/gnp-deploy/import-clients.sql.gz | /usr/bin/mysql -u root -paQcy7j2CSHYhDB8E cdnlab') != 0:
+    if os.system('gunzip < /home/cdnlab-gnp/gnp-deploy/cdn_tasks.sql.gz | /usr/bin/mysql -u root -paQcy7j2CSHYhDB8E cdnlab') != 0:
         logging.critical('Import database failed...')
         exit(0)
 
