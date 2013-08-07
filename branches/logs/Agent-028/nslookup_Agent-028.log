@@ -41,3 +41,5 @@ Traceback (most recent call last):
     waiter.acquire()
 KeyboardInterrupt
 [2013-08-07 13:39:51,256] The process is terminated with an exception.
+[2013-08-07 13:46:44,210] [ 0] An error occurs when handling the runCheck: [Errno -3] Temporary failure in name resolution
+[2013-08-07 14:01:44,398] [ 0] An error occurs when handling the runCheck: [Errno -3] Temporary failure in name resolution
