@@ -43,3 +43,51 @@ KeyboardInterrupt
 [2013-08-07 13:39:51,256] The process is terminated with an exception.
 [2013-08-07 13:46:44,210] [ 0] An error occurs when handling the runCheck: [Errno -3] Temporary failure in name resolution
 [2013-08-07 14:01:44,398] [ 0] An error occurs when handling the runCheck: [Errno -3] Temporary failure in name resolution
+[2013-08-07 16:01:21,713] Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 73, in nslookup
+    ips = runCheck(i, domain)
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 57, in runCheck
+    result = socket.gethostbyname_ex(host)
+herror: [Errno 2] Host name lookup failure
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 73, in nslookup
+    ips = runCheck(i, domain)
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 57, in runCheck
+    result = socket.gethostbyname_ex(host)
+herror: [Errno 2] Host name lookup failure
+[2013-08-07 16:01:21,713] [ 0] The job 113 is terminated with an exception.
+[2013-08-07 16:03:04,237] [ 0] An error occurs when handling the runCheck: [Errno -3] Temporary failure in name resolution
+[2013-08-07 17:01:21,966] [ 0] An error occurs when handling the runCheck: [Errno -3] Temporary failure in name resolution
+[2013-08-07 17:01:42,037] Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 73, in nslookup
+    ips = runCheck(i, domain)
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 57, in runCheck
+    result = socket.gethostbyname_ex(host)
+herror: [Errno 2] Host name lookup failure
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 73, in nslookup
+    ips = runCheck(i, domain)
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 57, in runCheck
+    result = socket.gethostbyname_ex(host)
+herror: [Errno 2] Host name lookup failure
+[2013-08-07 17:01:42,037] [ 0] The job 114 is terminated with an exception.
+[2013-08-07 17:02:39,504] Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 73, in nslookup
+    ips = runCheck(i, domain)
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 57, in runCheck
+    result = socket.gethostbyname_ex(host)
+herror: [Errno 2] Host name lookup failure
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 73, in nslookup
+    ips = runCheck(i, domain)
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 57, in runCheck
+    result = socket.gethostbyname_ex(host)
+herror: [Errno 2] Host name lookup failure
+[2013-08-07 17:02:39,505] [ 0] The job 450 is terminated with an exception.
+[2013-08-07 18:02:28,983]CRITICAL: [ 0] The job 427 is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 73, in nslookup
+    ips = runCheck(i, domain)
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 57, in runCheck
+    result = socket.gethostbyname_ex(host)
+herror: [Errno 2] Host name lookup failure
