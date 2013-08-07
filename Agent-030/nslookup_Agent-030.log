@@ -1,0 +1,13 @@
+[2013-08-07 12:01:24,307] Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 68, in nslookup
+    ips = runCheck(i, domain)
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 56, in runCheck
+    result = socket.gethostbyname_ex(host)
+herror: [Errno 2] Host name lookup failure
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 68, in nslookup
+    ips = runCheck(i, domain)
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 56, in runCheck
+    result = socket.gethostbyname_ex(host)
+herror: [Errno 2] Host name lookup failure
+[2013-08-07 12:01:24,307] [ 0] The job 421 is terminated with an exception.
