@@ -30,9 +30,9 @@ if len(sys.argv) > 1:
 
 try:
     if platform.system() == 'Windows':
-        logging.basicConfig(filename='nslookup_%s.log'%socket.gethostname(), level=logging.DEBUG, format=LOGGING_FORMAT)
+        logging.basicConfig(filename='nslookup_%s.log'%socket.gethostname(), level=logging.WARNING, format=LOGGING_FORMAT)
     else:
-        logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/nslookup_%s.log'%socket.gethostname(), level=logging.DEBUG, format=LOGGING_FORMAT)
+        logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/nslookup_%s.log'%socket.gethostname(), level=logging.WARNING, format=LOGGING_FORMAT)
 except:
     pass
 terminate_time = datetime.now() + timedelta(minutes=TERMINATE_MINUTES)
