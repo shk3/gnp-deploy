@@ -25,7 +25,7 @@ MYSQL_USER = 'cdnlab_scanner'
 MYSQL_PSWD = 'GVL3X94Q5nD29RBh'
 MYSQL_DBNAME = 'cdnlab'
 num_threads = 30
-LOGGING_FORMAT = '[%(asctime)-15s] %(message)s'
+LOGGING_FORMAT = '[%(asctime)-15s]%(levelname)s: %(message)s'
 if len(sys.argv) <= 1:
     trails = 25
 else:
@@ -127,8 +127,7 @@ def scanner(i, q):
             q.task_done()
         except:
             q.task_done()
-            logging.exception(''.join(traceback.format_exception(*sys.exc_info())))
-            logging.critical('[%2d] The job %d is terminated with an exception.'%(i, row_id))
+            logging.critical('The process is terminated with an exception.', exc_info=True)
             flag = True
         if terminate_time < datetime.now():
             logging.info('Time limitation exceed. ')
@@ -189,8 +188,7 @@ try:
     logging.info('The process is done normally.')
     # print('Scanner is done normally.')
 except:
-    logging.exception(''.join(traceback.format_exception(*sys.exc_info())))
-    logging.critical('The process is terminated with an exception.')
+    logging.critical('The process is terminated with an exception.', exc_info=True)
     try:
         saveResult()
         logging.info('Results are saved.')
