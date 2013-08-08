@@ -144,3 +144,11 @@ Traceback (most recent call last):
 herror: [Errno 2] Host name lookup failure
 [2013-08-08 08:02:34,069]WARNING: [ 0] An error occurs when handling the runCheck: [Errno -3] Temporary failure in name resolution
 [2013-08-08 08:03:14,302]WARNING: [ 0] An error occurs when handling the runCheck: [Errno -3] Temporary failure in name resolution
+[2013-08-08 09:02:24,800]WARNING: [ 0] An error occurs when handling the runCheck: [Errno -3] Temporary failure in name resolution
+[2013-08-08 09:02:44,913]CRITICAL: [ 0] The job 442 is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 73, in nslookup
+    ips = runCheck(i, domain)
+  File "/home/cdnlab-gnp/gnp-deploy/nslookup_daemon.py", line 57, in runCheck
+    result = socket.gethostbyname_ex(host)
+herror: [Errno 2] Host name lookup failure
