@@ -19,7 +19,10 @@ from datetime import datetime, timedelta
 import os,sys,re,csv, subprocess, time, platform, logging, traceback, socket
 import mysql.connector
 
+# obtain_ipaddr.py [trails=25] [threads=30] [autosave=30] [interval=2]
+
 TERMINATE_MINUTES = 58
+HOUR_INTERVAL = 2
 AUTOSAVE_INTERVAL = 30
 MYSQL_USER = 'cdnlab_scanner'
 MYSQL_PSWD = 'GVL3X94Q5nD29RBh'
@@ -34,6 +37,8 @@ else:
         num_threads = int(sys.argv[2])
         if len(sys.argv) > 3:
             AUTOSAVE_INTERVAL = int(sys.argv[3])
+            if len(sys.argv) > 4:
+                HOUR_INTERVAL = int(sys.argv[4])
 
 try:
     if platform.system() == 'Windows':
@@ -43,7 +48,8 @@ try:
 except:
     pass
 terminate_time = datetime.now() + timedelta(minutes=TERMINATE_MINUTES)
-cur_hour = datetime.now().hour>>1<<1
+cur_hour = datetime.now().hour
+cur_hour = cur_hour - cur_hour % HOUR_INTERVAL
 
 queue = Queue()
 regex = re.compile("time(=|<)([\d\.]*)", re.IGNORECASE | re.MULTILINE)
