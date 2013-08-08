@@ -55,7 +55,7 @@ def runCheck(i, host):
     
     try:
         result = socket.gethostbyname_ex(host)
-    except socket.gaierror as e:
+    except (socket.gaierror, herror) as e:
         logging.warning('[%2d] An error occurs when handling the runCheck: %s' % (i, str(e)))
         return []
         # Issues: Some possible errors can be prevented.
