@@ -9,6 +9,7 @@ except:
     pass
 import os,sys,re,csv, subprocess, time, platform, logging, traceback, socket
 VER = 10
+
 LOGGING_FORMAT = '[%(asctime)-15s] %(message)s'
 
 try:
