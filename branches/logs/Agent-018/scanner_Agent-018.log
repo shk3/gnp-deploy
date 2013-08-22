@@ -23,3 +23,16 @@ Traceback (most recent call last):
   File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 506, in _handle_result
     raise errors.get_exception(packet)
 ProgrammingError: 1146 (42S02): Table 'cdnlab.roundtrip' doesn't exist
+[2013-08-22 13:15:28,743]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 130, in scanner
+    saveResult()
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 156, in saveResult
+    updater.execute(update, row)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/cursor.py", line 392, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 584, in cmd_query
+    statement))
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 506, in _handle_result
+    raise errors.get_exception(packet)
+ProgrammingError: 1146 (42S02): Table 'cdnlab.roundtrip' doesn't exist
