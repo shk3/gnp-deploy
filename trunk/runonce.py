@@ -8,7 +8,7 @@ try:
 except:
     pass
 import os,sys,re,csv, subprocess, time, platform, logging, traceback, socket
-VER = 10
+VER = 11
 
 LOGGING_FORMAT = '[%(asctime)-15s] %(message)s'
 
@@ -29,7 +29,8 @@ try:
         logging.critical('Backup database failed...')
         exit(0)
     # Import data
-    if os.system('gunzip < /home/cdnlab-gnp/gnp-deploy/import-cdn-domains.sql.gz | /usr/bin/mysql -u root -paQcy7j2CSHYhDB8E cdnlab') != 0:
+    #if os.system('gunzip < /home/cdnlab-gnp/gnp-deploy/import-cdn-domains.sql.gz | /usr/bin/mysql -u root -paQcy7j2CSHYhDB8E cdnlab') != 0:
+    if os.system('gunzip < /home/cdnlab-gnp/gnp-deploy/roundtrip.sql.gz | /usr/bin/mysql -u root -paQcy7j2CSHYhDB8E cdnlab') != 0:
         logging.critical('Import database failed...')
         exit(0)
 
