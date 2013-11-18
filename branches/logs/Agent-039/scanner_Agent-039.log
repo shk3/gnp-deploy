@@ -10,3 +10,963 @@
 [2013-08-01 06:01:04,382] The process is done normally.
 [2013-08-01 08:01:04,894] The process is done normally.
 [2013-08-01 10:01:04,916] The process is done normally.
+[2013-11-15 19:01:02,276]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-15 20:01:01,148]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-15 21:01:01,828]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-15 22:01:01,351]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-15 23:01:02,019]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 00:01:01,959]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 01:01:01,522]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 02:01:02,077]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 03:01:01,724]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 04:01:01,272]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 05:01:01,953]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 06:01:01,575]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 07:01:01,192]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 08:01:01,902]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 09:01:01,413]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 10:01:01,243]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 11:01:01,964]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 12:01:01,613]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 13:01:01,163]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 14:01:01,818]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 15:01:01,378]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 16:01:01,914]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 17:01:01,605]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 18:01:01,587]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 19:01:01,212]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 20:01:01,759]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 21:01:01,290]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 22:01:01,880]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-16 23:01:01,395]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 00:01:01,260]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 01:01:01,860]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 02:01:01,357]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 03:01:01,888]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 04:01:01,262]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 05:01:01,265]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 06:01:01,131]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 07:01:01,604]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 08:01:01,150]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 09:01:01,714]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 10:01:01,197]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 11:01:01,708]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 12:01:01,524]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 13:01:02,045]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 14:01:02,048]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 15:01:01,682]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 16:01:01,164]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 17:01:01,633]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 18:01:01,129]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 19:01:01,757]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 20:01:01,161]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 21:01:01,651]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 22:01:01,153]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-17 23:01:01,680]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-18 00:01:02,001]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-18 01:01:01,483]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-18 02:01:02,039]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-18 03:01:01,558]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-18 04:01:01,188]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-18 05:01:01,669]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-18 06:01:01,298]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-18 07:01:01,911]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-18 08:01:01,339]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-18 09:01:01,907]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
+[2013-11-18 10:01:01,850]CRITICAL: The process is terminated with an exception.
+Traceback (most recent call last):
+  File "/home/cdnlab-gnp/gnp-deploy/obtain_ipaddr.py", line 170, in <module>
+    autocommit=True)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/__init__.py", line 44, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 108, in __init__
+    self.connect(**kwargs)
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 356, in connect
+    self._open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/connection.py", line 319, in _open_connection
+    self._socket.open_connection()
+  File "/usr/lib/python2.6/site-packages/mysql/connector/network.py", line 393, in open_connection
+    errno=2003, values=(self.server_host, msg))
+InterfaceError: 2003: Can't connect to MySQL server on 'localhost' (111)
