@@ -19,37 +19,48 @@ from datetime import datetime, timedelta
 import os,sys,re,csv, subprocess, time, platform, logging, traceback, socket
 import mysql.connector
 
-# obtain_ipaddr.py [trails=25] [threads=30] [autosave=30] [interval=2]
+# obtain_ipaddr.py [trails=25] [threads=30] [autosave=30] [interval min=40]
 
-TERMINATE_MINUTES = 58
-HOUR_INTERVAL = 2
+TERMINATE_MINUTES = 38
+MIN_INTERVAL = 40
 AUTOSAVE_INTERVAL = 30
-MYSQL_USER = 'cdnlab_scanner'
-MYSQL_PSWD = 'GVL3X94Q5nD29RBh'
+MYSQL_USER = 'root'
+MYSQL_PSWD = 'cdnlab'
 MYSQL_DBNAME = 'cdnlab'
+#MYSQL_USER = 'root'
+#MYSQL_PSWD = '2760484'
+#MYSQL_DBNAME = 'cdnlab'
+
+
 num_threads = 30
 LOGGING_FORMAT = '[%(asctime)-15s]%(levelname)s: %(message)s'
 if len(sys.argv) <= 1:
     trails = 25
 else:
     trails = int(sys.argv[1])
+	
     if len(sys.argv) > 2:
         num_threads = int(sys.argv[2])
         if len(sys.argv) > 3:
             AUTOSAVE_INTERVAL = int(sys.argv[3])
             if len(sys.argv) > 4:
-                HOUR_INTERVAL = int(sys.argv[4])
+                MIN_INTERVAL = int(sys.argv[4])
 
 try:
     if platform.system() == 'Windows':
         logging.basicConfig(filename='scanner_%s.log'%socket.gethostname(), level=logging.WARNING, format=LOGGING_FORMAT)
     else:
-        logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/scanner_%s.log'%socket.gethostname(), level=logging.WARNING, format=LOGGING_FORMAT)
+        logging.basicConfig(filename='/root/gnp-logs/scanner_%s.log'%socket.gethostname(), level=logging.WARNING, format=LOGGING_FORMAT)
 except:
     pass
+
+
+file_start = open("/root/starttime.conf")
+start_time = float(file_start.read())
+
+
 terminate_time = datetime.now() + timedelta(minutes=TERMINATE_MINUTES)
-cur_hour = datetime.now().hour
-cur_hour = cur_hour - cur_hour % HOUR_INTERVAL
+cur_hour = int(time.time() - start_time) / (MIN_INTERVAL * 60)
 
 queue = Queue()
 regex = re.compile("time(=|<)([\d\.]*)", re.IGNORECASE | re.MULTILINE)
@@ -168,6 +179,8 @@ try:
         conn = mysql.connector.connect(user=MYSQL_USER, password=MYSQL_PSWD,
                                        host='localhost', database=MYSQL_DBNAME,
                                        autocommit=True)
+        tmpstr2 = select % (str(cur_hour))	
+        print(tmpstr2)
         cursor = conn.cursor()
         cursor.execute(select, (cur_hour,))
         flag = True

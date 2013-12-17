@@ -8,16 +8,16 @@ try:
 except:
     pass
 import os,sys,re,csv, subprocess, time, platform, logging, traceback, socket
-VER = 11
+VER = 12
 
 LOGGING_FORMAT = '[%(asctime)-15s] %(message)s'
 
 try:
-    logging.basicConfig(filename='/home/cdnlab-gnp/gnp-logs/runonce_%s.log'%socket.gethostname(), level=logging.INFO, format=LOGGING_FORMAT) 
+    logging.basicConfig(filename='/root/gnp-logs/runonce_%s.log'%socket.gethostname(), level=logging.INFO, format=LOGGING_FORMAT) 
 except:
     pass
 try:
-    rhdl = open('/home/cdnlab-gnp/runonce_%s.lock'%socket.gethostname(), 'r') 
+    rhdl = open('/root/runonce.lock', 'r') 
     cur_ver = int(rhdl.read().strip())
     if cur_ver >= VER:
         exit(0)
@@ -25,19 +25,19 @@ try:
     logging.info('Run at version %d.' % VER)
         
     # Backup database
-    if os.system('/usr/bin/mysqldump -u root -paQcy7j2CSHYhDB8E cdnlab | /bin/gzip > /home/cdnlab-gnp/export-cdn.sql.gz') != 0:
+    if os.system('/usr/bin/mysqldump -u root -pcdnlab cdnlab | /bin/gzip > /root/export-cdn.sql.gz') != 0:
         logging.critical('Backup database failed...')
         exit(0)
     # Import data
     #if os.system('gunzip < /home/cdnlab-gnp/gnp-deploy/import-cdn-domains.sql.gz | /usr/bin/mysql -u root -paQcy7j2CSHYhDB8E cdnlab') != 0:
-    if os.system('gunzip < /home/cdnlab-gnp/gnp-deploy/roundtrip.sql.gz | /usr/bin/mysql -u root -paQcy7j2CSHYhDB8E cdnlab') != 0:
+    if os.system('gunzip < /root/gnp-deploy/roundtrip.sql.gz | /usr/bin/mysql -u root -pcdnlab cdnlab') != 0:
         logging.critical('Import database failed...')
         exit(0)
 
     # # Clear log file
     # os.system('rm -f /home/cdnlab-gnp/gnp-logs/*.log')
 
-    whdl = open('/home/cdnlab-gnp/runonce_%s.lock'%socket.gethostname(), 'w')
+    whdl = open('/root/runonce.lock', 'w')
     print(VER, file=whdl)
     whdl.close()
     logging.info('Lock of version %d is saved.' % VER)
