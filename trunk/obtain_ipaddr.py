@@ -24,12 +24,12 @@ import mysql.connector
 TERMINATE_MINUTES = 38
 MIN_INTERVAL = 40
 AUTOSAVE_INTERVAL = 30
-MYSQL_USER = 'cdnlab_scanner'
-MYSQL_PSWD = 'GVL3X94Q5nD29RBh'
-MYSQL_DBNAME = 'cdnlab'
-#MYSQL_USER = 'root'
-#MYSQL_PSWD = '2760484'
+#MYSQL_USER = 'cdnlab_scanner'
+#MYSQL_PSWD = 'GVL3X94Q5nD29RBh'
 #MYSQL_DBNAME = 'cdnlab'
+MYSQL_USER = 'root'
+MYSQL_PSWD = 'aQcy7j2CSHYhDB8E'
+MYSQL_DBNAME = 'cdnlab'
 
 
 num_threads = 30
