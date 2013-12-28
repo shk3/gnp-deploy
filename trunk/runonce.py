@@ -8,7 +8,7 @@ try:
 except:
     pass
 import os,sys,re,csv, subprocess, time, platform, logging, traceback, socket
-VER = 12
+VER = 13
 
 LOGGING_FORMAT = '[%(asctime)-15s] %(message)s'
 
@@ -25,7 +25,7 @@ try:
     logging.info('Run at version %d.' % VER)
         
     # Backup database
-    if os.system('/usr/bin/mysqldump -u root -paQcy7j2CSHYhDB8E cdnlab | /bin/gzip > /root/export-cdn.sql.gz') != 0:
+    if os.system('/usr/bin/mysqldump -u root -pcdnlab cdnlab | /bin/gzip > /root/export-cdn.sql.gz') != 0:
         logging.critical('Backup database failed...')
         exit(0)
     # Import data
