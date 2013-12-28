@@ -26,7 +26,7 @@ try:
         
     # Backup database
     #if os.system('/usr/bin/mysqldump -u root -pcdnlab cdnlab | /bin/gzip > /root/export-cdn.sql.gz') != 0:
-	if os.system('/usr/bin/mysqldump -u root -paQcy7j2CSHYhDB8E cdnlab | /bin/gzip > /root/export-cdn.sql.gz') != 0:
+    if os.system('/usr/bin/mysqldump -u root -paQcy7j2CSHYhDB8E cdnlab | /bin/gzip > /root/export-cdn.sql.gz') != 0:
         logging.critical('Backup database failed...')
         exit(0)
     # Import data
