@@ -7,6 +7,7 @@ if [ $flag -ne "-1" ]; then
 	./runScanner.sh
 	if [ $flag -gt "145" ]; then
 		/root/gnp-deploy/cron/uploader.sh
+	fi
 	echo $[ $flag+1 ] > /root/timeflag.conf
 fi
 
