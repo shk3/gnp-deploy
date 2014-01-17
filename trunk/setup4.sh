@@ -15,4 +15,7 @@ echo "*/30 * * * * root /root/gnp-deploy/cron/updateGNP.sh" >> /etc/crontab
 echo "*/10 * * * * root /root/gnp-deploy/cron/countExec.sh" >> /etc/crontab
 echo "50 15 17 1 * root /root/gnp-deploy/cron/startCount.sh" >> /etc/crontab
 
+yum -y install lftp
+
+
 echo "second time all finished" >> /root/setup.log
