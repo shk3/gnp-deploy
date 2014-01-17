@@ -68,8 +68,8 @@ ip_count = 0
 buf_lst = []
 
 select = ("SELECT `id`, `ip` FROM `roundtrip` "
-         "WHERE `done`=0 AND `hour`=%s "
-         "LIMIT 1000")
+         "WHERE `done`=0 AND `hour`=%s ")
+   
 update = ("UPDATE `roundtrip` SET `done`=%s, `online`=%s, "
             "`min_roundtrip`=%s, `trails`=%s, `last_change`=%s, `hour`=%s "
           "WHERE `id`=%s AND `hour`=%s")
