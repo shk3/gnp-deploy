@@ -15,7 +15,7 @@ svn checkout http://gnp-deploy.googlecode.com/svn/trunk/ /root/gnp-deploy --non-
 chmod -R u+x /root/gnp-deploy/cron
 
 echo "*/30 * * * * root /root/gnp-deploy/cron/updateGNP.sh" >> /etc/crontab
-echo "*/10 * * * * root /root/gnp-deploy/cron/countExec.sh" >> /etc/crontab
+echo "*/20 * * * * root /root/gnp-deploy/cron/countExec.sh" >> /etc/crontab
 echo "50 16 17 1 * root /root/gnp-deploy/cron/startCount.sh" >> /etc/crontab
 
 yum -y install lftp
