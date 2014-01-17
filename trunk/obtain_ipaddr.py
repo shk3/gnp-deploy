@@ -59,9 +59,6 @@ except:
     pass
 
 
-file_start = open("/root/starttime.conf")
-start_time = float(file_start.read())
-
 
 terminate_time = datetime.now() + timedelta(minutes=TERMINATE_MINUTES)
 
