@@ -1,5 +1,5 @@
 #!/bin/bash
-mysql -u root -pcdnlab << EOF
+mysql -u root -paQcy7j2CSHYhDB8E << EOF
 	use cdnlab;
 	select * from roundtrip into outfile 'mydata.csv' fields terminated by ',' optionally enclosed by '"' lines terminated by '\r\n';
 EOF
