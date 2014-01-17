@@ -47,8 +47,8 @@ else:
             AUTOSAVE_INTERVAL = int(sys.argv[3])
             if len(sys.argv) > 4:
                 MIN_INTERVAL = int(sys.argv[4])
-				if len(sys.argv) > 4:
-					cur_hour=int(sys.argv[5])
+                if len(sys.argv) > 4:
+                    cur_hour=int(sys.argv[5])
 
 try:
     if platform.system() == 'Windows':
